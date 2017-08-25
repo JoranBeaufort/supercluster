@@ -7,7 +7,7 @@ var now = Date.now();
 var index;
 
 getJSON('../test/fixtures/places.json', function (geojson) {
-    console.log('loaded ' + geojson.length + ' points JSON in ' + ((Date.now() - now) / 1000) + 's');
+    console.log('loaded ' + geojson.features.length + ' points JSON in ' + ((Date.now() - now) / 1000) + 's');
 
     index = supercluster({
         log: true,
